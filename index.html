@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>To Do List</title>
+</head>
+<body>
+  <main class="container">
+    <nav class="nav-menu">
+      <img src="assets/images/profile.png" alt="Logo">
+    </nav>
+    <aside class="menu">
+      <ul>
+        <li><a class="active-menu" href=""><span><i class="bi bi-calendar-date"></i>Hoje</span><span id="today">3</span></a></li>
+        <li><a href=""><span><i class="bi bi-calendar-minus"></i>Próximos 7 dias</span><span id="next-days">1</span></a></li>
+        <li><a href=""><span><i class="bi bi-inbox"></i>Caixa de entrada</span><span id="inbox"></span></a></li>
+      </ul>
+    </aside>
+    <section class="content">
+      <section class="list-task">
+        <div class="list-task-header">
+          <h3><i class="bi bi-list"></i>Hoje</h3>
+          <input type="text" placeholder="+ Adicione uma nova tarefa" class="new-task" id="new-task">
+        </div>
+        <div class="list-task-body">
+          
+        </div>
+      </section>
+      <section class="task-details">
+        
+      </section>
+      </section>
+
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

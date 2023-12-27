@@ -1,0 +1,181 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;  
+}
+:root{
+--color-primary: #282a36;         /* Um roxo escuro que serve como cor de fundo para o tema escuro. */
+--color-secondary: #1E1F29;       /* Um roxo ligeiramente mais claro para ser usado como fundo secundário ou destacar áreas específicas. */
+--color-text-primary: #F8F8F2;    /* Um branco suave para o texto principal, proporcionando contraste com o fundo. */
+--color-text-secondary: #bfbfbf;  /* Um cinza claro para textos secundários, como subtítulos ou descrições. */
+--color-highligh: #BD93F9;        /* Um roxo brilhante para realçar elementos importantes ou botões. */
+--color-highligh-2: #50FA7B;      /* Um verde limão para ser usado como cor de destaque para interações ou informações relevantes. */
+--color-danger: rgb(224,49,49)
+}
+
+.light{
+  --color-primary: #F8F8F2;         /* Um branco suave que serve como cor de fundo para o tema claro. */
+  --color-secondary: #EAEAEA;       /* Um cinza claro para ser usado como fundo secundário ou destacar áreas específicas no modo claro. */
+  --color-text-primary: #282A36;    /* Um roxo escuro que proporciona contraste com o fundo claro para o texto principal. */
+  --color-text-secondary: #666666;  /* Um cinza mais escuro para textos secundários, como subtítulos ou descrições.   */
+  --color-highligh: #6200EE;        /* Um roxo mais brilhante para realçar elementos importantes ou botões no modo claro. */
+  --color-highligh-2: #118B76;      /* Um verde esmeralda para ser usado como cor de destaque para interações ou informações relevantes no modo claro. */
+}
+
+body{
+  font-family: 'Fira Code';
+  background-color: var(--color-primary) ;
+  color: var(--color-text-primary);
+}
+
+i{
+  margin-right: 5px;
+}
+input[type='checkbox']{
+  scale: 1.4;
+  margin: 0 5px;
+}
+
+input[type='checkbox']:hover , .date:hover, .priority:hover{
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+}
+
+.nav-menu{
+  width: 55px;
+  padding: 15px 7px;
+  background-color: var(--color-secondary);
+  border-right: solid 1px var(--color-primary);
+  box-shadow: 2px 0px 5px 0px rgba(40,42,54,1);
+  z-index: 1;
+}
+.nav-menu img{
+  width: 37px;
+  border-radius: 5px;
+}
+
+.menu{
+  min-width: 240px;
+  height: 100vh;
+  padding: 15px 10px;
+  background-color: var(--color-secondary);
+}
+
+.menu ul li{
+  list-style: none;
+}
+.menu ul li a{
+  display: flex;
+  justify-content:space-between;
+  padding: 15px 10px;
+  text-decoration:none;
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 5px;
+}
+
+.menu ul li a:hover{
+  background-color: var(--color-primary);
+  border:solid 1px var(--color-secondary);
+}
+.menu ul li a span{
+  text-align: right;
+}
+
+.menu ul li a span i{
+  font-size: 18px;
+}
+
+.content{
+  display: flex;
+  width: 100%;
+}
+
+.list-task{
+  width: 55%;
+  padding: 15px 20px;
+  border-right: solid 1px var(--color-secondary);
+}
+
+.list-task h3{
+  padding: 5px 0;
+  font-size: 28px;
+}
+
+.list-task .new-task{
+  width: 100%;
+  height: 40px;
+  background-color:  rgba(191, 191, 191, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  color: var(--color-text-secondary);
+  font-family: 'Fira Code', sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.task{
+  max-width: 90ch;
+  padding:5px 5px;
+  border-bottom: solid 1px var(--color-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task .task-content{
+  width: 100%;
+  font-weight: 300;
+  word-break: keep-all;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  padding: 10px 10px;
+}
+
+.task .delete{
+  color:var(--color-danger);
+  cursor: pointer;
+  font-size: 20px;
+}
+.task:hover{
+  background-color: rgba(191, 191, 191, 0.1);
+  border-radius: 5px;
+  border-bottom: none;
+  cursor: text;
+}
+
+.task-details{
+  width: 45%;
+  padding: 0 25px;
+  border-right: solid 1px var(--color-secondary);
+}
+
+.task-details .task-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  margin-bottom: 20px;
+  border-bottom: solid 1px var(--color-secondary);
+}
+
+.task-info .date{
+  border-left: solid 1px var(--color-secondary);
+  padding-left: 15px;
+  font-weight: 300;
+}
+.active-menu{
+  background-color: var(--color-primary);
+}
+
+
+
+
+
+
